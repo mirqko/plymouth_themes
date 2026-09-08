@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Nintendo
+Description=Nintendo boot animation
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/nintendo
+ScriptFile=/usr/share/plymouth/themes/nintendo/nintendo.script

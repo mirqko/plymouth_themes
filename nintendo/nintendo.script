@@ -1,0 +1,23 @@
+frame = 1;
+
+fun refresh_callback ()
+  {
+    image = Image("nintendo." + frame + ".png");
+    sprite.SetImage(image);
+
+    sprite.SetX(Window.GetX() + Window.GetWidth() / 2 - image.GetWidth() / 2);
+    sprite.SetY(Window.GetY() + Window.GetHeight() / 2 - image.GetHeight() / 2);
+
+    frame++;
+
+    if (frame > 76)
+      {
+        frame = 1;
+      }
+  }
+
+sprite = Sprite();
+
+Plymouth.SetRefreshFunction(refresh_callback);
+
+refresh_callback();
