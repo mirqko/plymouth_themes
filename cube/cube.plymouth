@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Nintendo
+Description=Cube boot animation
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/cube
+ScriptFile=/usr/share/plymouth/themes/cube/cube.script
