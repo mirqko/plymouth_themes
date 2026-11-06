@@ -1,12 +1,106 @@
+# Nintendo Plymouth theme
+# 76-frame animation, approximately 30 FPS
+
+frames = [];
 frame = 1;
+
+# Preload all 76 frames
+frames[1] = Image("nintendo.1.png");
+frames[2] = Image("nintendo.2.png");
+frames[3] = Image("nintendo.3.png");
+frames[4] = Image("nintendo.4.png");
+frames[5] = Image("nintendo.5.png");
+frames[6] = Image("nintendo.6.png");
+frames[7] = Image("nintendo.7.png");
+frames[8] = Image("nintendo.8.png");
+frames[9] = Image("nintendo.9.png");
+frames[10] = Image("nintendo.10.png");
+frames[11] = Image("nintendo.11.png");
+frames[12] = Image("nintendo.12.png");
+frames[13] = Image("nintendo.13.png");
+frames[14] = Image("nintendo.14.png");
+frames[15] = Image("nintendo.15.png");
+frames[16] = Image("nintendo.16.png");
+frames[17] = Image("nintendo.17.png");
+frames[18] = Image("nintendo.18.png");
+frames[19] = Image("nintendo.19.png");
+frames[20] = Image("nintendo.20.png");
+frames[21] = Image("nintendo.21.png");
+frames[22] = Image("nintendo.22.png");
+frames[23] = Image("nintendo.23.png");
+frames[24] = Image("nintendo.24.png");
+frames[25] = Image("nintendo.25.png");
+frames[26] = Image("nintendo.26.png");
+frames[27] = Image("nintendo.27.png");
+frames[28] = Image("nintendo.28.png");
+frames[29] = Image("nintendo.29.png");
+frames[30] = Image("nintendo.30.png");
+frames[31] = Image("nintendo.31.png");
+frames[32] = Image("nintendo.32.png");
+frames[33] = Image("nintendo.33.png");
+frames[34] = Image("nintendo.34.png");
+frames[35] = Image("nintendo.35.png");
+frames[36] = Image("nintendo.36.png");
+frames[37] = Image("nintendo.37.png");
+frames[38] = Image("nintendo.38.png");
+frames[39] = Image("nintendo.39.png");
+frames[40] = Image("nintendo.40.png");
+frames[41] = Image("nintendo.41.png");
+frames[42] = Image("nintendo.42.png");
+frames[43] = Image("nintendo.43.png");
+frames[44] = Image("nintendo.44.png");
+frames[45] = Image("nintendo.45.png");
+frames[46] = Image("nintendo.46.png");
+frames[47] = Image("nintendo.47.png");
+frames[48] = Image("nintendo.48.png");
+frames[49] = Image("nintendo.49.png");
+frames[50] = Image("nintendo.50.png");
+frames[51] = Image("nintendo.51.png");
+frames[52] = Image("nintendo.52.png");
+frames[53] = Image("nintendo.53.png");
+frames[54] = Image("nintendo.54.png");
+frames[55] = Image("nintendo.55.png");
+frames[56] = Image("nintendo.56.png");
+frames[57] = Image("nintendo.57.png");
+frames[58] = Image("nintendo.58.png");
+frames[59] = Image("nintendo.59.png");
+frames[60] = Image("nintendo.60.png");
+frames[61] = Image("nintendo.61.png");
+frames[62] = Image("nintendo.62.png");
+frames[63] = Image("nintendo.63.png");
+frames[64] = Image("nintendo.64.png");
+frames[65] = Image("nintendo.65.png");
+frames[66] = Image("nintendo.66.png");
+frames[67] = Image("nintendo.67.png");
+frames[68] = Image("nintendo.68.png");
+frames[69] = Image("nintendo.69.png");
+frames[70] = Image("nintendo.70.png");
+frames[71] = Image("nintendo.71.png");
+frames[72] = Image("nintendo.72.png");
+frames[73] = Image("nintendo.73.png");
+frames[74] = Image("nintendo.74.png");
+frames[75] = Image("nintendo.75.png");
+frames[76] = Image("nintendo.76.png");
+
+sprite = Sprite(frames[1]);
+
+sprite.SetX(
+  Window.GetX() + Window.GetWidth() / 2 - frames[1].GetWidth() / 2
+);
+
+sprite.SetY(
+  Window.GetY() + Window.GetHeight() / 2 - frames[1].GetHeight() / 2
+);
+
+# ~30 FPS:
+# 1 / 30 = 0.0333 seconds per frame.
+#
+# Plymouth's Script plugin calls the refresh function according
+# to its refresh timing, so each callback advances exactly one frame.
 
 fun refresh_callback ()
   {
-    image = Image("nintendo." + frame + ".png");
-    sprite.SetImage(image);
-
-    sprite.SetX(Window.GetX() + Window.GetWidth() / 2 - image.GetWidth() / 2);
-    sprite.SetY(Window.GetY() + Window.GetHeight() / 2 - image.GetHeight() / 2);
+    sprite.SetImage(frames[frame]);
 
     frame++;
 
@@ -16,8 +110,4 @@ fun refresh_callback ()
       }
   }
 
-sprite = Sprite();
-
 Plymouth.SetRefreshFunction(refresh_callback);
-
-refresh_callback();
