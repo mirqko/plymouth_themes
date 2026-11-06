@@ -1,0 +1,234 @@
+# Cube Plymouth theme
+# 200-frame animation, approximately 30 FPS
+
+frames = [];
+frame = 1;
+
+# Preload all 200 frames
+frames[1] = Image("cube.1.png");
+frames[2] = Image("cube.2.png");
+frames[3] = Image("cube.3.png");
+frames[4] = Image("cube.4.png");
+frames[5] = Image("cube.5.png");
+frames[6] = Image("cube.6.png");
+frames[7] = Image("cube.7.png");
+frames[8] = Image("cube.8.png");
+frames[9] = Image("cube.9.png");
+frames[10] = Image("cube.10.png");
+frames[11] = Image("cube.11.png");
+frames[12] = Image("cube.12.png");
+frames[13] = Image("cube.13.png");
+frames[14] = Image("cube.14.png");
+frames[15] = Image("cube.15.png");
+frames[16] = Image("cube.16.png");
+frames[17] = Image("cube.17.png");
+frames[18] = Image("cube.18.png");
+frames[19] = Image("cube.19.png");
+frames[20] = Image("cube.20.png");
+frames[21] = Image("cube.21.png");
+frames[22] = Image("cube.22.png");
+frames[23] = Image("cube.23.png");
+frames[24] = Image("cube.24.png");
+frames[25] = Image("cube.25.png");
+frames[26] = Image("cube.26.png");
+frames[27] = Image("cube.27.png");
+frames[28] = Image("cube.28.png");
+frames[29] = Image("cube.29.png");
+frames[30] = Image("cube.30.png");
+frames[31] = Image("cube.31.png");
+frames[32] = Image("cube.32.png");
+frames[33] = Image("cube.33.png");
+frames[34] = Image("cube.34.png");
+frames[35] = Image("cube.35.png");
+frames[36] = Image("cube.36.png");
+frames[37] = Image("cube.37.png");
+frames[38] = Image("cube.38.png");
+frames[39] = Image("cube.39.png");
+frames[40] = Image("cube.40.png");
+frames[41] = Image("cube.41.png");
+frames[42] = Image("cube.42.png");
+frames[43] = Image("cube.43.png");
+frames[44] = Image("cube.44.png");
+frames[45] = Image("cube.45.png");
+frames[46] = Image("cube.46.png");
+frames[47] = Image("cube.47.png");
+frames[48] = Image("cube.48.png");
+frames[49] = Image("cube.49.png");
+frames[50] = Image("cube.50.png");
+frames[51] = Image("cube.51.png");
+frames[52] = Image("cube.52.png");
+frames[53] = Image("cube.53.png");
+frames[54] = Image("cube.54.png");
+frames[55] = Image("cube.55.png");
+frames[56] = Image("cube.56.png");
+frames[57] = Image("cube.57.png");
+frames[58] = Image("cube.58.png");
+frames[59] = Image("cube.59.png");
+frames[60] = Image("cube.60.png");
+frames[61] = Image("cube.61.png");
+frames[62] = Image("cube.62.png");
+frames[63] = Image("cube.63.png");
+frames[64] = Image("cube.64.png");
+frames[65] = Image("cube.65.png");
+frames[66] = Image("cube.66.png");
+frames[67] = Image("cube.67.png");
+frames[68] = Image("cube.68.png");
+frames[69] = Image("cube.69.png");
+frames[70] = Image("cube.70.png");
+frames[71] = Image("cube.71.png");
+frames[72] = Image("cube.72.png");
+frames[73] = Image("cube.73.png");
+frames[74] = Image("cube.74.png");
+frames[75] = Image("cube.75.png");
+frames[76] = Image("cube.76.png");
+frames[77] = Image("cube.77.png");
+frames[78] = Image("cube.78.png");
+frames[79] = Image("cube.79.png");
+frames[80] = Image("cube.80.png");
+frames[81] = Image("cube.81.png");
+frames[82] = Image("cube.82.png");
+frames[83] = Image("cube.83.png");
+frames[84] = Image("cube.84.png");
+frames[85] = Image("cube.85.png");
+frames[86] = Image("cube.86.png");
+frames[87] = Image("cube.87.png");
+frames[88] = Image("cube.88.png");
+frames[89] = Image("cube.89.png");
+frames[90] = Image("cube.90.png");
+frames[91] = Image("cube.91.png");
+frames[92] = Image("cube.92.png");
+frames[93] = Image("cube.93.png");
+frames[94] = Image("cube.94.png");
+frames[95] = Image("cube.95.png");
+frames[96] = Image("cube.96.png");
+frames[97] = Image("cube.97.png");
+frames[98] = Image("cube.98.png");
+frames[99] = Image("cube.99.png");
+frames[100] = Image("cube.100.png");
+frames[101] = Image("cube.101.png");
+frames[102] = Image("cube.102.png");
+frames[103] = Image("cube.103.png");
+frames[104] = Image("cube.104.png");
+frames[105] = Image("cube.105.png");
+frames[106] = Image("cube.106.png");
+frames[107] = Image("cube.107.png");
+frames[108] = Image("cube.108.png");
+frames[109] = Image("cube.109.png");
+frames[110] = Image("cube.110.png");
+frames[111] = Image("cube.111.png");
+frames[112] = Image("cube.112.png");
+frames[113] = Image("cube.113.png");
+frames[114] = Image("cube.114.png");
+frames[115] = Image("cube.115.png");
+frames[116] = Image("cube.116.png");
+frames[117] = Image("cube.117.png");
+frames[118] = Image("cube.118.png");
+frames[119] = Image("cube.119.png");
+frames[120] = Image("cube.120.png");
+frames[121] = Image("cube.121.png");
+frames[122] = Image("cube.122.png");
+frames[123] = Image("cube.123.png");
+frames[124] = Image("cube.124.png");
+frames[125] = Image("cube.125.png");
+frames[126] = Image("cube.126.png");
+frames[127] = Image("cube.127.png");
+frames[128] = Image("cube.128.png");
+frames[129] = Image("cube.129.png");
+frames[130] = Image("cube.130.png");
+frames[131] = Image("cube.131.png");
+frames[132] = Image("cube.132.png");
+frames[133] = Image("cube.133.png");
+frames[134] = Image("cube.134.png");
+frames[135] = Image("cube.135.png");
+frames[136] = Image("cube.136.png");
+frames[137] = Image("cube.137.png");
+frames[138] = Image("cube.138.png");
+frames[139] = Image("cube.139.png");
+frames[140] = Image("cube.140.png");
+frames[141] = Image("cube.141.png");
+frames[142] = Image("cube.142.png");
+frames[143] = Image("cube.143.png");
+frames[144] = Image("cube.144.png");
+frames[145] = Image("cube.145.png");
+frames[146] = Image("cube.146.png");
+frames[147] = Image("cube.147.png");
+frames[148] = Image("cube.148.png");
+frames[149] = Image("cube.149.png");
+frames[150] = Image("cube.150.png");
+frames[151] = Image("cube.151.png");
+frames[152] = Image("cube.152.png");
+frames[153] = Image("cube.153.png");
+frames[154] = Image("cube.154.png");
+frames[155] = Image("cube.155.png");
+frames[156] = Image("cube.156.png");
+frames[157] = Image("cube.157.png");
+frames[158] = Image("cube.158.png");
+frames[159] = Image("cube.159.png");
+frames[160] = Image("cube.160.png");
+frames[161] = Image("cube.161.png");
+frames[162] = Image("cube.162.png");
+frames[163] = Image("cube.163.png");
+frames[164] = Image("cube.164.png");
+frames[165] = Image("cube.165.png");
+frames[166] = Image("cube.166.png");
+frames[167] = Image("cube.167.png");
+frames[168] = Image("cube.168.png");
+frames[169] = Image("cube.169.png");
+frames[170] = Image("cube.170.png");
+frames[171] = Image("cube.171.png");
+frames[172] = Image("cube.172.png");
+frames[173] = Image("cube.173.png");
+frames[174] = Image("cube.174.png");
+frames[175] = Image("cube.175.png");
+frames[176] = Image("cube.176.png");
+frames[177] = Image("cube.177.png");
+frames[178] = Image("cube.178.png");
+frames[179] = Image("cube.179.png");
+frames[180] = Image("cube.180.png");
+frames[181] = Image("cube.181.png");
+frames[182] = Image("cube.182.png");
+frames[183] = Image("cube.183.png");
+frames[184] = Image("cube.184.png");
+frames[185] = Image("cube.185.png");
+frames[186] = Image("cube.186.png");
+frames[187] = Image("cube.187.png");
+frames[188] = Image("cube.188.png");
+frames[189] = Image("cube.189.png");
+frames[190] = Image("cube.190.png");
+frames[191] = Image("cube.191.png");
+frames[192] = Image("cube.192.png");
+frames[193] = Image("cube.193.png");
+frames[194] = Image("cube.194.png");
+frames[195] = Image("cube.195.png");
+frames[196] = Image("cube.196.png");
+frames[197] = Image("cube.197.png");
+frames[198] = Image("cube.198.png");
+frames[199] = Image("cube.199.png");
+frames[200] = Image("cube.200.png");
+
+sprite = Sprite(frames[1]);
+
+sprite.SetX(
+  Window.GetX() + Window.GetWidth() / 2 - frames[1].GetWidth() / 2
+);
+
+sprite.SetY(
+  Window.GetY() + Window.GetHeight() / 2 - frames[1].GetHeight() / 2
+);
+
+# ~30 FPS:
+# 1 / 30 = 0.0333 seconds per frame.
+
+fun refresh_callback ()
+  {
+    sprite.SetImage(frames[frame]);
+
+    frame++;
+
+    if (frame > 200)
+      {
+        frame = 1;
+      }
+  }
+
+Plymouth.SetRefreshFunction(refresh_callback);
