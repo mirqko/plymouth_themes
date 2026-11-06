@@ -1,12 +1,102 @@
+# Cube Plymouth theme
+# 75-frame animation, approximately 30 FPS
+
+frames = [];
 frame = 1;
+
+# Preload all 75 frames
+frames[1] = Image("cube.1.png");
+frames[2] = Image("cube.2.png");
+frames[3] = Image("cube.3.png");
+frames[4] = Image("cube.4.png");
+frames[5] = Image("cube.5.png");
+frames[6] = Image("cube.6.png");
+frames[7] = Image("cube.7.png");
+frames[8] = Image("cube.8.png");
+frames[9] = Image("cube.9.png");
+frames[10] = Image("cube.10.png");
+frames[11] = Image("cube.11.png");
+frames[12] = Image("cube.12.png");
+frames[13] = Image("cube.13.png");
+frames[14] = Image("cube.14.png");
+frames[15] = Image("cube.15.png");
+frames[16] = Image("cube.16.png");
+frames[17] = Image("cube.17.png");
+frames[18] = Image("cube.18.png");
+frames[19] = Image("cube.19.png");
+frames[20] = Image("cube.20.png");
+frames[21] = Image("cube.21.png");
+frames[22] = Image("cube.22.png");
+frames[23] = Image("cube.23.png");
+frames[24] = Image("cube.24.png");
+frames[25] = Image("cube.25.png");
+frames[26] = Image("cube.26.png");
+frames[27] = Image("cube.27.png");
+frames[28] = Image("cube.28.png");
+frames[29] = Image("cube.29.png");
+frames[30] = Image("cube.30.png");
+frames[31] = Image("cube.31.png");
+frames[32] = Image("cube.32.png");
+frames[33] = Image("cube.33.png");
+frames[34] = Image("cube.34.png");
+frames[35] = Image("cube.35.png");
+frames[36] = Image("cube.36.png");
+frames[37] = Image("cube.37.png");
+frames[38] = Image("cube.38.png");
+frames[39] = Image("cube.39.png");
+frames[40] = Image("cube.40.png");
+frames[41] = Image("cube.41.png");
+frames[42] = Image("cube.42.png");
+frames[43] = Image("cube.43.png");
+frames[44] = Image("cube.44.png");
+frames[45] = Image("cube.45.png");
+frames[46] = Image("cube.46.png");
+frames[47] = Image("cube.47.png");
+frames[48] = Image("cube.48.png");
+frames[49] = Image("cube.49.png");
+frames[50] = Image("cube.50.png");
+frames[51] = Image("cube.51.png");
+frames[52] = Image("cube.52.png");
+frames[53] = Image("cube.53.png");
+frames[54] = Image("cube.54.png");
+frames[55] = Image("cube.55.png");
+frames[56] = Image("cube.56.png");
+frames[57] = Image("cube.57.png");
+frames[58] = Image("cube.58.png");
+frames[59] = Image("cube.59.png");
+frames[60] = Image("cube.60.png");
+frames[61] = Image("cube.61.png");
+frames[62] = Image("cube.62.png");
+frames[63] = Image("cube.63.png");
+frames[64] = Image("cube.64.png");
+frames[65] = Image("cube.65.png");
+frames[66] = Image("cube.66.png");
+frames[67] = Image("cube.67.png");
+frames[68] = Image("cube.68.png");
+frames[69] = Image("cube.69.png");
+frames[70] = Image("cube.70.png");
+frames[71] = Image("cube.71.png");
+frames[72] = Image("cube.72.png");
+frames[73] = Image("cube.73.png");
+frames[74] = Image("cube.74.png");
+frames[75] = Image("cube.75.png");
+
+sprite = Sprite(frames[1]);
+
+sprite.SetX(
+  Window.GetX() + Window.GetWidth() / 2 - frames[1].GetWidth() / 2
+);
+
+sprite.SetY(
+  Window.GetY() + Window.GetHeight() / 2 - frames[1].GetHeight() / 2
+);
+
+# ~30 FPS:
+# 1 / 30 = 0.0333 seconds per frame.
 
 fun refresh_callback ()
   {
-    image = Image("cube." + frame + ".png");
-    sprite.SetImage(image);
-
-    sprite.SetX(Window.GetX() + Window.GetWidth() / 2 - image.GetWidth() / 2);
-    sprite.SetY(Window.GetY() + Window.GetHeight() / 2 - image.GetHeight() / 2);
+    sprite.SetImage(frames[frame]);
 
     frame++;
 
@@ -16,8 +106,4 @@ fun refresh_callback ()
       }
   }
 
-sprite = Sprite();
-
 Plymouth.SetRefreshFunction(refresh_callback);
-
-refresh_callback();
